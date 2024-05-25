@@ -2,16 +2,6 @@
 # React starter
 [https://najwer23.github.io/react-starter/](https://najwer23.github.io/react-starter/)
 
-## Self Update
-```sh
-ncu -u
-```
-
-## Yarn update
-```sh
-yarn set version latest
-```
-
 ## Installation
 ```sh
 $ yarn install
@@ -32,14 +22,26 @@ $ yarn build
 $ yarn deploy
 ```
 
-### Husky
+## Tools
+
+#### Husky
 ```sh
 yarn husky install
 ```
 
-### Sort package.json
+#### Sort package.json
 ```sh
 npx sort-package-json
+```
+
+#### Self Update
+```sh
+ncu -u
+```
+
+#### Yarn update
+```sh
+yarn set version latest
 ```
 
 ## License
