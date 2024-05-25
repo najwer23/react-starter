@@ -1,6 +1,6 @@
 {
 	"name": "react-starter",
-	"version": "0.0.6",
+	"version": "0.0.7",
 	"keywords": [
 		"react",
 		"gh-pages",
@@ -17,7 +17,9 @@
 		"deploy": "yarn run build && gh-pages -d build && rimraf build",
 		"god": "ncu -u && yarn install && yarn run start",
 		"preview": "yarn build && vite preview --open --host",
-		"start": "vite --open --host"
+		"start": "vite --open --host",
+		"test": "vitest",
+		"bench": "vitest bench"
 	},
 	"devDependencies": {
 		"@types/node": "^20.12.12",
@@ -36,7 +38,9 @@
 		"react-router-dom": "^6.23.1",
 		"rimraf": "^5.0.7",
 		"typescript": "^5.4.5",
-		"vite": "^5.2.11"
+		"vite": "^5.2.11",
+		"vitest": "^1.6.0",
+		"@testing-library/react": "15.0.7"
 	},
 	"packageManager": "yarn@4.2.2"
 }
