@@ -1,14 +1,23 @@
 {
 	"name": "react-starter",
-	"version": "0.0.2",
-	"type": "module",
+	"version": "0.0.3",
+	"keywords": [
+		"react",
+		"gh-pages",
+		"typescript",
+		"vite",
+		"css modules",
+		"front-end",
+		"yarn"
+	],
 	"homepage": "https://najwer23.github.io/react-starter/",
+	"type": "module",
 	"scripts": {
-		"deploy": "yarn run build && gh-pages -d build && rimraf build",
-		"start": "vite --open --host",
 		"build": "tsc && vite build",
+		"deploy": "yarn run build && gh-pages -d build && rimraf build",
+		"god": "ncu -u && yarn install && yarn run start",
 		"preview": "yarn build && vite preview --open --host",
-		"god": "ncu -u && yarn install && yarn run start"
+		"start": "vite --open --host"
 	},
 	"devDependencies": {
 		"@types/node": "^20.12.12",

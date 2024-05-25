@@ -37,5 +37,10 @@ $ yarn deploy
 yarn husky install
 ```
 
+### Sort package.json
+```sh
+npx sort-package-json
+```
+
 ## License
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
