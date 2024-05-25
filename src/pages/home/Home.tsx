@@ -1,7 +1,9 @@
 import styles from './Home.module.css'
 
-export const Home = () => (
-	<div className={styles.container}>
-		Hello World!
-	</div>
-)
+export const Home = () => {
+	return (
+		<div className={styles.container}>
+			Hello World!
+		</div>
+	)
+}
