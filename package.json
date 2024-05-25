@@ -1,6 +1,6 @@
 {
 	"name": "react-starter",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"type": "module",
 	"homepage": "https://najwer23.github.io/react-starter/",
 	"scripts": {
@@ -12,11 +12,11 @@
 	},
 	"devDependencies": {
 		"@types/node": "^20.12.12",
-		"@types/react": "^18.3.2",
+		"@types/react": "^18.3.3",
 		"@types/react-dom": "^18.3.0",
 		"@typescript-eslint/eslint-plugin": "^7.10.0",
 		"@typescript-eslint/parser": "^7.10.0",
-		"@vitejs/plugin-react": "^4.2.1",
+		"@vitejs/plugin-react": "^4.3.0",
 		"eslint": "^9.3.0",
 		"eslint-plugin-react-hooks": "^4.6.2",
 		"eslint-plugin-react-refresh": "^0.4.7",
@@ -29,5 +29,5 @@
 		"typescript": "^5.4.5",
 		"vite": "^5.2.11"
 	},
-	"packageManager": "yarn@4.2.1"
+	"packageManager": "yarn@4.2.2"
 }
