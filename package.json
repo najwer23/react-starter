@@ -1,0 +1,33 @@
+{
+	"name": "react-starter",
+	"version": "0.0.0",
+	"type": "module",
+	"homepage": "https://najwer23.github.io/react-starter/",
+	"scripts": {
+		"deploy": "yarn run build && gh-pages -d build && rimraf build",
+		"start": "vite --open --host",
+		"build": "tsc && vite build",
+		"preview": "yarn build && vite preview --open --host",
+		"god": "ncu -u && yarn install && yarn run start"
+	},
+	"devDependencies": {
+		"@types/node": "^20.12.12",
+		"@types/react": "^18.3.2",
+		"@types/react-dom": "^18.3.0",
+		"@typescript-eslint/eslint-plugin": "^7.10.0",
+		"@typescript-eslint/parser": "^7.10.0",
+		"@vitejs/plugin-react": "^4.2.1",
+		"eslint": "^9.3.0",
+		"eslint-plugin-react-hooks": "^4.6.2",
+		"eslint-plugin-react-refresh": "^0.4.7",
+		"gh-pages": "^6.1.1",
+		"husky": "^9.0.11",
+		"react": "^18.3.1",
+		"react-dom": "^18.3.1",
+		"react-router-dom": "^6.23.1",
+		"rimraf": "^5.0.7",
+		"typescript": "^5.4.5",
+		"vite": "^5.2.11"
+	},
+	"packageManager": "yarn@4.2.1"
+}
