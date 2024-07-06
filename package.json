@@ -1,6 +1,6 @@
 {
   "name": "react-starter",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "keywords": [
     "react",
     "gh-pages",
@@ -15,7 +15,7 @@
   "type": "module",
   "scripts": {
     "bench": "vitest bench",
-    "build": "tsc && vite build",
+    "build": "tsc --build --clean && vite build",
     "deploy": "yarn run build && gh-pages -d build && rimraf build",
     "god": "ncu -u && yarn install && yarn run start",
     "preview": "yarn build && vite preview --open --host",
