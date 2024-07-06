@@ -1,6 +1,6 @@
 {
 	"name": "react-starter",
-	"version": "0.1.4",
+	"version": "0.1.5",
 	"keywords": [
 		"react",
 		"gh-pages",
@@ -20,7 +20,8 @@
 		"god": "ncu -u && yarn install && yarn run start",
 		"preview": "yarn build && vite preview --open --host",
 		"start": "vite --open --host",
-		"test": "vitest"
+		"test": "vitest",
+		"prepare": "husky"
 	},
 	"devDependencies": {
 		"@testing-library/jest-dom": "^6.4.6",
