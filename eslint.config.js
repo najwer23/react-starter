@@ -60,6 +60,6 @@ export default [
     },
   },
   {
-    ignores: ['build/'],
+    ignores: ['build/', 'node_modules/', '**/*.min.js', '.yarn/'],
   },
 ];

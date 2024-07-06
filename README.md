@@ -28,12 +28,6 @@ $ yarn deploy
 
 ## Tools
 
-#### Husky
-
-```sh
-yarn husky install
-```
-
 #### Sort package.json
 
 ```sh
