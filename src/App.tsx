@@ -1,5 +1,3 @@
 import { RouterHash } from './router/RouterHash';
 
-export const App = () => (
-	<RouterHash />
-)
+export const App = () => <RouterHash />;
