@@ -20,6 +20,13 @@
     "noFallthroughCasesInSwitch": true,
 
     "types": ["vite/client"]
+
+    // alias src dir
+    // "baseUrl": ".",
+    // "rootDir": ".",
+    // "paths": {
+    //   "@najwer23/*": ["src/*"]
+    // }
   },
   "include": ["src"],
   "extends": "./tsconfig.node.json",

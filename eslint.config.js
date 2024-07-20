@@ -5,6 +5,18 @@ import reactPlugin from 'eslint-plugin-react';
 import reactHooksPlugin from 'eslint-plugin-react-hooks';
 import prettierPlugin from 'eslint-plugin-prettier';
 
+const commonRules = {
+  'prettier/prettier': 'error',
+  '@typescript-eslint/no-unused-vars': 'error',
+  'react/no-unescaped-entities': 'off',
+  'react/prop-types': 'off',
+  'react/react-in-jsx-scope': 'off',
+  'no-undef': 'off',
+  '@typescript-eslint/no-explicit-any': 'off',
+  'react-hooks/exhaustive-deps': 'off',
+  'react/no-children-prop': 'off',
+};
+
 export default [
   eslint.configs.recommended,
   {
@@ -18,29 +30,20 @@ export default [
     languageOptions: {
       parser: tseslintParser,
       parserOptions: {
-        ecmaFeatures: {
-          jsx: true,
-        },
+        ecmaFeatures: { jsx: true },
         ecmaVersion: 'latest',
         sourceType: 'module',
       },
     },
     settings: {
-      react: {
-        version: 'detect',
-      },
+      react: { version: 'detect' },
     },
     rules: {
+      ...tseslint.configs['eslint-recommended'].rules,
       ...tseslint.configs.recommended.rules,
       ...reactPlugin.configs.recommended.rules,
       ...reactHooksPlugin.configs.recommended.rules,
-      'prettier/prettier': 'error',
-      '@typescript-eslint/no-unused-vars': 'error',
-      'react/no-unescaped-entities': 'off',
-      'react/prop-types': 'off',
-      'react/react-in-jsx-scope': 'off',
-      'no-undef': 'off',
-      '@typescript-eslint/no-explicit-any': 'off',
+      ...commonRules,
     },
   },
   {
