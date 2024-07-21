@@ -1,6 +1,6 @@
 import { RouterProvider, createHashRouter } from 'react-router-dom';
-import { Home } from '../pages/home/Home';
 import { ScrollToTop } from './ScrollToTop';
+import { Home } from '../pages/home/Home';
 
 export const router = createHashRouter([
   {
