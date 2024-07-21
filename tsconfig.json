@@ -19,14 +19,14 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
 
-    "types": ["vite/client"]
+    "types": ["vite/client"],
 
     // alias src dir
-    // "baseUrl": ".",
-    // "rootDir": ".",
-    // "paths": {
-    //   "@najwer23/*": ["src/*"]
-    // }
+    "baseUrl": ".",
+    "rootDir": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    }
   },
   "include": ["src"],
   "extends": "./tsconfig.node.json",
