@@ -38,6 +38,11 @@ yarn build
 yarn deploy
 ```
 
+### Icons
+[Icon Sizes](https://appiconmaker.co/Home/Index/1809c59a-947c-4ec8-8f3c-52dae76de012)
+
+```
+
 # Let's connect!
 
 [![dev.to badge](https://img.shields.io/badge/-Portfolio-%239F2B68?style=flat&logo=GoogleChrome&logoColor=white)](https://najwer23.github.io/)
