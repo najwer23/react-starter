@@ -1,0 +1,1 @@
+if('serviceWorker' in navigator) {window.addEventListener('load', () => {navigator.serviceWorker.register('/react-starter/sw.js', { scope: '/react-starter/' })})}
