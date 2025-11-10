@@ -1,4 +1,4 @@
-# React Starter (Typescript, Vite, CSS modules Vitest, Biome, PWA)
+# React Starter
 
 [![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/najwer23/react-starter) [![Github Pages](https://img.shields.io/badge/github%20pages-121013?style=for-the-badge&logo=github&logoColor=white)](https://najwer23.github.io/react-starter/)
 
