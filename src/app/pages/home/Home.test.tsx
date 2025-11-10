@@ -1,6 +1,6 @@
+import { render, screen } from '@testing-library/react';
 import { describe, expect, test } from 'vitest';
 import { Home } from './Home';
-import { render, screen } from '@testing-library/react';
 
 describe.skip('Home test', () => {
   test('Should show Hello World!', () => {
