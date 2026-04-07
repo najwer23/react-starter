@@ -1,10 +1,14 @@
 import { render, screen } from '@testing-library/react';
-import { describe, expect, test } from 'vitest';
+import { describe, expect, test, vi } from 'vitest';
 import { Home } from './Home';
 
-describe.skip('Home test', () => {
+vi.mock('@app/hooks/useDocumentTitle', () => ({
+  useDocumentTitle: vi.fn(),
+}));
+
+describe('Home test', () => {
   test('Should show Hello World!', () => {
     render(<Home />);
-    expect(screen.getByText(/Hello World!/i)).toBeDefined();
+    expect(screen.getByText(/Hello World!/i)).toBeInTheDocument();
   });
 });
