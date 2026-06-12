@@ -1,6 +1,6 @@
 import { useDocumentTitle } from '@app/hooks/useDocumentTitle';
-import { Grid } from 'najwer23morsels/lib/grid';
-import { TextBox } from 'najwer23morsels/lib/textbox';
+import { Grid } from 'najwer23morsels/lib/Grid';
+import { TextBox } from 'najwer23morsels/lib/TextBox';
 // import styles from './Home.module.css';
 
 export const Home = () => {
