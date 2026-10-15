@@ -110,10 +110,6 @@ Update Yarn itself:
 yarn set version latest
 ```
 
-## Icons
-
-[Icon Sizes](https://appiconmaker.co/Home/Index/1809c59a-947c-4ec8-8f3c-52dae76de012)
-
 ## Let's connect!
 
 - **Portfolio:** https://najwer23.github.io
