@@ -1,18 +1,13 @@
-import { bench } from 'vitest';
+import { test } from 'vitest';
 import { csum, sum } from './Home.utils';
 
-bench(
-  'csum',
-  () => {
-    csum(2)(2);
-  },
-  { time: 1000 },
-);
+const _csum = csum;
+const _sum = sum;
 
-bench(
-  'sum',
-  () => {
-    sum(2, 2);
-  },
-  { time: 1000 },
-);
+test('csum vs sum', async ({ bench }) => {
+  await bench.compare(
+    bench('csum', () => _csum(2)(2)),
+    bench('sum', () => _sum(2, 2)),
+    { time: 1000 },
+  );
+});

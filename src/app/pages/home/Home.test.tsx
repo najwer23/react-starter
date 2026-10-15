@@ -9,6 +9,6 @@ vi.mock('@app/hooks/useDocumentTitle', () => ({
 describe('Home test', () => {
   test('Should show Hello World!', () => {
     render(<Home />);
-    expect(screen.getByText(/Hello World!/i)).toBeInTheDocument();
+    expect(screen.getByText(/Hello World!/i)).toBeTruthy();
   });
 });
