@@ -12,12 +12,15 @@ interface RequestOptions<T> {
   headers?: Record<string, string>;
 }
 
-export const executeFetch = async (url: URL, options?: RequestInit) => {
+export const executeFetch = async <TResponse extends ResponseBase = ResponseBase>(
+  url: URL,
+  options?: RequestInit,
+): Promise<TResponse> => {
   const response = await fetch(url, options);
-  const data = await response.json();
+  const data: TResponse = await response.json();
 
   if (data.error) {
-    throw Error(data.message);
+    throw new Error(data.message);
   }
 
   return data;
