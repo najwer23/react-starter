@@ -1,24 +1,66 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en" class="notranslate" translate="no">
 
 <head>
-	<meta name="google" content="notranslate">
 	<meta charset="UTF-8">
-	<meta name="description" content="React starter kit with Vite, TypeScript, CSS modules">
-	<meta name="author" content="Mariusz Najwer">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="keywords" content="najwer23, Mariusz Najwer">
-	<meta name="robots" content="INDEX,FOLLOW">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<title>Mariusz Najwer</title>
-	<meta property="og:image" content="/najwer23.png">
+
+	<!-- Hide the static fallback only when JS is running, until React mounts -->
+	<script>document.documentElement.classList.add('js');</script>
+	<style>.js #root > main { visibility: hidden; }</style>
+
+	<title>React Starter | Vite, TypeScript, CSS Modules | Mariusz Najwer</title>
+	<meta name="description" content="Open-source React starter kit by Mariusz Najwer with Vite, TypeScript, CSS Modules, PWA support and a ready-to-use design system.">
+	<meta name="author" content="Mariusz Najwer">
+	<link rel="canonical" href="https://najwer23.github.io/react-starter/">
+
 	<link rel="icon" href="/icon/favicon.ico" sizes="32x32">
 	<link rel="icon" href="/icon/icon.svg" type="image/svg+xml">
 	<link rel="apple-touch-icon" href="/icon/apple-touch-icon.png">
+
+	<!-- Open Graph -->
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://najwer23.github.io/react-starter/">
+	<meta property="og:site_name" content="React Starter">
+	<meta property="og:title" content="React Starter | Vite, TypeScript, CSS Modules">
+	<meta property="og:description" content="Open-source React starter kit with Vite, TypeScript, CSS Modules, PWA support and a ready-to-use design system.">
+	<meta property="og:image" content="https://najwer23.github.io/najwer23.png">
+	<meta property="og:image:alt" content="React Starter by Mariusz Najwer">
+
+	<!-- Twitter / X -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="React Starter | Vite, TypeScript, CSS Modules">
+	<meta name="twitter:description" content="Open-source React starter kit with Vite, TypeScript, CSS Modules, PWA support and a ready-to-use design system.">
+	<meta name="twitter:image" content="https://najwer23.github.io/najwer23.png">
+
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "SoftwareSourceCode",
+			"name": "React Starter",
+			"description": "React starter kit with Vite, TypeScript, CSS Modules and PWA support.",
+			"url": "https://najwer23.github.io/react-starter/",
+			"codeRepository": "https://github.com/najwer23/react-starter",
+			"programmingLanguage": "TypeScript",
+			"runtimePlatform": "Node.js",
+			"author": {
+				"@type": "Person",
+				"name": "Mariusz Najwer",
+				"url": "https://najwer23.github.io/"
+			}
+		}
+	</script>
 </head>
 
 <body>
-	<div id="root"></div>
+	<div id="root">
+		<main>
+			<h1>React Starter</h1>
+			<p>An open-source React starter kit by <a href="https://najwer23.github.io/">Mariusz Najwer</a>. It comes with Vite, TypeScript, CSS Modules, PWA support and a ready-to-use design system, so you can start a new project without the setup work.</p>
+			<p>Source code: <a href="https://github.com/najwer23/react-starter" target="_blank" rel="noopener noreferrer">github.com/najwer23/react-starter</a></p>
+		</main>
+	</div>
+	<noscript>Please enable JavaScript to view this page.</noscript>
 	<script type="module" src="/src/main.tsx"></script>
 </body>
 

@@ -14,26 +14,21 @@ export default defineConfig({
       //   enabled: true,
       // },
       manifest: {
+        id: '/react-starter/',
         name: 'React Starter by Mariusz Najwer',
         short_name: 'React Starter',
+        description: 'React starter kit with Vite, TypeScript, CSS Modules and PWA support.',
+        lang: 'en',
         start_url: '/react-starter/',
         scope: '/react-starter/',
         display: 'standalone',
         background_color: '#ffffff',
         theme_color: '#000000',
         icons: [
-          {
-            src: 'icon/192.png',
-            sizes: '192x192',
-            type: 'image/png',
-            purpose: 'any',
-          },
-          {
-            src: 'icon/512.png',
-            sizes: '512x512',
-            type: 'image/png',
-            purpose: 'any',
-          },
+          { src: 'icon/192.png', sizes: '192x192', type: 'image/png', purpose: 'any' },
+          { src: 'icon/512.png', sizes: '512x512', type: 'image/png', purpose: 'any' },
+          // Optional: add a dedicated maskable icon (with safe-zone padding)
+          // { src: 'icon/512-maskable.png', sizes: '512x512', type: 'image/png', purpose: 'maskable' },
         ],
       },
     }),
