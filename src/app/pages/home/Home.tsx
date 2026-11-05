@@ -146,11 +146,9 @@ export const Home = () => {
   return (
     <Grid layout="container" widthMax={'900px'} padding={'0 20px 30px 20px'}>
       <header>
-        <Typography appearance="light" variant="display">
-          React Starter
-        </Typography>
+        <Typography variant="display">React Starter</Typography>
 
-        <Typography appearance="light" variant="body">
+        <Typography variant="body">
           A free, open-source React boilerplate with Vite, TypeScript, CSS Modules, PWA support and a ready-to-use
           design system.
         </Typography>
@@ -158,7 +156,7 @@ export const Home = () => {
 
       <main>
         <section>
-          <Typography appearance="light" variant="body">
+          <Typography variant="body">
             React Starter is an open-source React starter kit by{' '}
             <Typography href={'https://najwer23.github.io/'} variant={'link'}>
               Mariusz Najwer
@@ -167,7 +165,7 @@ export const Home = () => {
             support and a reusable component library, so you can start a new web application without the setup work.
           </Typography>
 
-          <Typography appearance="light" variant="body">
+          <Typography variant="body">
             Every new React project begins with the same chores: choosing a bundler, configuring TypeScript, setting up
             a test runner, agreeing on code style, adding a service worker and deciding how to organize styles. This
             starter does all of that for you with sensible defaults, so you can spend your time on features, users and
@@ -176,9 +174,7 @@ export const Home = () => {
         </section>
 
         <section>
-          <Typography appearance="light" variant="heading">
-            Why use this React starter
-          </Typography>
+          <Typography variant="heading">Why use this React starter</Typography>
 
           <ul>
             {reasons.map(({ name, text }) => (
@@ -192,11 +188,9 @@ export const Home = () => {
         </section>
 
         <section>
-          <Typography appearance="light" variant="heading">
-            Tech stack
-          </Typography>
+          <Typography variant="heading">Tech stack</Typography>
 
-          <Typography appearance="light" variant="body">
+          <Typography variant="body">
             The starter uses a small set of well-supported tools that work together out of the box. Each one solves a
             specific problem, and none of them is hidden behind a custom wrapper, so you can read the documentation for
             any of them and apply it directly to your project.
@@ -214,11 +208,9 @@ export const Home = () => {
         </section>
 
         <section>
-          <Typography appearance="light" variant="heading">
-            A React design system included
-          </Typography>
+          <Typography variant="heading">A React design system included</Typography>
 
-          <Typography appearance="light" variant="body">
+          <Typography variant="body">
             The UI is built with <em>najwer23morsels</em>, a collection of reusable React components made for
             consistent, scalable applications. Because every screen uses the same building blocks, the look stays
             uniform and a change to one component updates the whole app. This page is built from three of them:
@@ -234,7 +226,7 @@ export const Home = () => {
             ))}
           </ul>
 
-          <Typography appearance="light" variant="body">
+          <Typography variant="body">
             The components are written in TypeScript, bundled for tree shaking, so you only ship what you use, and
             documented in Storybook, where you can try each one before adding it to your code.{' '}
             <Typography
@@ -250,9 +242,7 @@ export const Home = () => {
         </section>
 
         <section>
-          <Typography appearance="light" variant="heading">
-            Who is this starter for
-          </Typography>
+          <Typography variant="heading">Who is this starter for</Typography>
 
           <ul>
             {audience.map(({ name, text }) => (
@@ -266,28 +256,20 @@ export const Home = () => {
         </section>
 
         <section>
-          <Typography appearance="light" variant="heading">
-            Frequently asked questions
-          </Typography>
+          <Typography variant="heading">Frequently asked questions</Typography>
 
           {faq.map(({ question, answer }) => (
             <article key={question}>
-              <Typography appearance="light" variant="subheading">
-                {question}
-              </Typography>
-              <Typography appearance="light" variant="body">
-                {answer}
-              </Typography>
+              <Typography variant="subheading">{question}</Typography>
+              <Typography variant="body">{answer}</Typography>
             </article>
           ))}
         </section>
 
         <section>
-          <Typography appearance="light" variant="heading">
-            Get the source code
-          </Typography>
+          <Typography variant="heading">Get the source code</Typography>
 
-          <Typography appearance="light" variant="body">
+          <Typography variant="body">
             React Starter is free and open source. Clone it, star it, report an issue or send a pull request on GitHub:{' '}
             <Typography
               variant="link"
